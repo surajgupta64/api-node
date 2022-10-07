@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 var cors = require('cors')
 app.use(cors())
-const port = 5000;
+const port = process.env.PORT || 3000;
 const userValidate = require('./Routes/jwt')
 // BODY PARSER
 app.use(bodyParser.json());
