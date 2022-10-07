@@ -19,6 +19,7 @@ mongoose.connection.on('error', (err) => {
     console.log(err)
 });
 app.get('/', (req, res) => res.json({ status: "Running" }));
+
 //ROUTES 
 app.use('/signup', require('./Routes/signup'));
 
