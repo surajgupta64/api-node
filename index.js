@@ -41,6 +41,7 @@ app.use('/Package', userValidate, require('./Routes/Package'));
 app.use('/brandlogoupdate', userValidate, require('./Routes/brandlogoupdate'));
 app.use('/service', userValidate, require('./Routes/service'));
 app.use('/subservice', userValidate, require('./Routes/subservice'));
+app.use('/memberForm', userValidate, require('./Routes/memberForm'));
 
 app.listen(port, function () {
     console.log('listening on port', port);
