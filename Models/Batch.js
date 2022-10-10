@@ -7,4 +7,3 @@ let Batch = new mongoose.Schema({
 	status: Boolean,
 }, { timestamps: true })
 module.exports = mongoose.model('Batch', Batch);
-
